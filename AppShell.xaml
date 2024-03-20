@@ -6,10 +6,20 @@
     xmlns:local="clr-namespace:TaskTemple"
     Shell.FlyoutBehavior="Disabled"
     Title="TaskTemple">
+    <TabBar>
+        <ShellContent Title="Home"
+                      Icon="home.png"
+                      ContentTemplate="{DataTemplate local:MainPage}"
+                      Route="MainPage" />
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+        <ShellContent Title="Tasks"
+                      Icon="tasks.png"
+                      ContentTemplate="{DataTemplate local:TasksPage}"
+                      Route="TaksPage" />
+        
+        <ShellContent Title="Profile"
+                      Icon="profile.png"
+                      ContentTemplate="{DataTemplate local:ProfilePage}" 
+                      Route="ProfilePage" />
+    </TabBar>
 </Shell>

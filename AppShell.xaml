@@ -7,18 +7,15 @@
     Shell.FlyoutBehavior="Disabled"
     Title="TaskTemple">
     <TabBar>
-        <ShellContent Title="Home"
-                      Icon="home.png"
+        <ShellContent Icon="Resources/Images/to_do.png"
                       ContentTemplate="{DataTemplate local:MainPage}"
                       Route="MainPage" />
 
-        <ShellContent Title="Tasks"
-                      Icon="tasks.png"
+        <ShellContent Icon="Resources/Images/calendar.png"
                       ContentTemplate="{DataTemplate local:TasksPage}"
                       Route="TaksPage" />
         
-        <ShellContent Title="Profile"
-                      Icon="profile.png"
+        <ShellContent Icon="Resources/Images/profile.png"
                       ContentTemplate="{DataTemplate local:ProfilePage}" 
                       Route="ProfilePage" />
     </TabBar>
